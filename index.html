@@ -4,48 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Job Hunt Tracker</title>
-    <!-- DaisyUi CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <title>Job Hunt Tracker</title>
+    <!-- tailwind link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- google Fonts CDN -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Manrope:wght@200..800&display=swap"
-        rel="stylesheet">
 
-    <!-- font awesome CDN -->
+    <!-- icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Style section  -->
-    <style>
-        * {
-            font-family: "Geist", sans-serif;
-        }
-    </style>
-
 </head>
 
 <body class="bg-gray-100">
-
+    <!-- header section  -->
     <header>
-        <!-- header section -->
-        <section class="w-[80%] mx-auto  py-5 pt-12">
-            <h1 class="text-3xl lg:text-5xl font-extrabold text-sky-900 ">Job Application Tracker</h1>
+        <section class="w-[80%] mx-auto  py-5 pt-12 ">
+            <h1 class="text-3xl lg:text-5xl font-bold text-sky-900 ">Job Application Tracker</h1>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-10">
-                <div class="shadow bg-white rounded-3xl p-6 ">
+            <div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 mt-4 pt-7">
+                <div class="shadow bg-white rounded-2xl p-6 ">
                     <h4 class="text-xl lg:text-3xl ">Total</h4>
                     <h4 id="totalCount" class="text-xl lg:text-3xl font-bold py-2">0</h4>
                 </div>
 
-                <div class="shadow bg-white rounded-3xl p-6 ">
+                <div class="shadow bg-white rounded-2xl p-6 ">
                     <h4 class="text-xl lg:text-3xl ">Interview</h4>
                     <h4 id="interviewCount" class="text-xl lg:text-3xl font-bold text-green-500 py-2">0</h4>
                 </div>
 
-                <div class="shadow bg-white rounded-3xl p-6 ">
+                <div class="shadow bg-white rounded-2xl p-6 ">
                     <h4 class="text-xl lg:text-3xl ">Rejected</h4>
                     <h4 id="rejectedCount" class="text-xl lg:text-3xl font-bold text-red-500 py-2">0</h4>
                 </div>
@@ -53,13 +39,13 @@
         </section>
     </header>
 
-    <!-- main section -->
-     <main class=" w-[80%] mx-auto mt-5 ">
-
-     </main>
+    <!-- main section  -->
 
 
+
+
+    <!-- js link -->
+    <script src="script/script.js"></script>
 
 </body>
-
 </html>
