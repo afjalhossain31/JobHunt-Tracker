@@ -1,7 +1,7 @@
 // Global variables 
 let interviewArray = [], rejectedArray = [], currentStatus = "all";
 
-// DOM Elements
+// DOM Elements -All 
 const totalCounter = document.getElementById("total-Count"),
       interviewCounter = document.getElementById("interview-Count"),
       rejectedCounter = document.getElementById("rejected-Count"),
@@ -13,6 +13,7 @@ const totalCounter = document.getElementById("total-Count"),
       mainContainer = document.getElementById("main"),
       filterSection = document.getElementById("filtered-section");
 
+// Initial count calculation
 function calculateCount() {
     totalCounter.innerText = jobsCount.innerText = cardContainer.children.length;
     interviewCounter.innerText = interviewArray.length;

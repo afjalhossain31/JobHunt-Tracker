@@ -1,4 +1,4 @@
-# JavaScript DOM Questions & Answers
+## JavaScript DOM Questions & Answers
 
 ## 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
@@ -66,7 +66,7 @@ parentElement.prepend(div);
 // Add before another element
 parentElement.insertBefore(div, referenceElement);
 
-// Add using insertAdjacentHTML
+// Add using insert Adjacent HTML
 parentElement.insertAdjacentHTML('beforeend', '<div>New content</div>');
 ```
 
@@ -141,20 +141,4 @@ document.getElementById("main")
 - `preventDefault()` =  Browser er default kaj bond kore
 - `stopPropagation()` = Event bubbling bond kore.
 
----
 
-## Quick Reference - Short Answers
-
-- **getElementById** → Selects one element by its ID
-
-- **getElementsByClassName** → Returns a live HTMLCollection
-
-- **querySelectorAll** → Returns a static NodeList
-
-- **Event Bubbling** → Event moves from child to parent elements
-
-- **Event Delegation** → One event listener on the parent element
-
-- **preventDefault()** → Stops the browser's default action
-
-- **stopPropagation()** → Stops the event from bubbling up
