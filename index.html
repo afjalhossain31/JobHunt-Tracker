@@ -15,45 +15,47 @@
 </head>
 
 <body class="bg-gray-100">
+
     <!-- header section  -->
     <header>
         <section class="w-[80%] mx-auto  py-5 pt-12 ">
             <h1 class="text-3xl lg:text-5xl font-bold text-sky-900 ">Job Application Tracker</h1>
 
             <div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 mt-4 pt-7">
-                <div class="shadow bg-white rounded-2xl p-6 ">
+                <div class="shadow bg-green-300 rounded-2xl p-6 ">
                     <h4 class="text-xl lg:text-3xl ">Total</h4>
-                    <h4 id="totalCount" class="text-xl lg:text-3xl font-bold py-2">0</h4>
+                    <h4 id="total-Count" class="text-xl lg:text-3xl font-bold py-2">0</h4>
                 </div>
 
-                <div class="shadow bg-white rounded-2xl p-6 ">
+                <div class="shadow bg-sky-300 rounded-2xl p-6 ">
                     <h4 class="text-xl lg:text-3xl ">Interview</h4>
-                    <h4 id="interviewCount" class="text-xl lg:text-3xl font-bold text-green-500 py-2">0</h4>
+                    <h4 id="interview-Count" class="text-xl lg:text-3xl font-bold text-green-500 py-2">0</h4>
                 </div>
 
-                <div class="shadow bg-white rounded-2xl p-6 ">
+                <div class="shadow bg-red-300 rounded-2xl p-6 ">
                     <h4 class="text-xl lg:text-3xl ">Rejected</h4>
-                    <h4 id="rejectedCount" class="text-xl lg:text-3xl font-bold text-red-500 py-2">0</h4>
+                    <h4 id="rejected-Count" class="text-xl lg:text-3xl font-bold text-red-500 py-2">0</h4>
                 </div>
             </div>
         </section>
     </header>
 
+
     <!-- main section  -->
-    <main class=" w-[80%] mx-auto mt-5 ">
+    <main id="main" class=" w-[80%] mx-auto mt-5 ">
 
         <section class="flex justify-between mb-6">
             <h3 class="text-sky-900 font-extrabold text-2xl">Available Jobs</h3>
-            <p class="text-sky-700"> <span id="count-jobs">0</span> jobs </p>
+            <p class="text-sky-700"> <span id="jobs-Count">0</span> jobs </p>
         </section>
 
         <!-- buttons -->
         <section>
-            <button id="all-filter-btn" class="shadow bg-sky-500 text-white  py-2 px-5 rounded-xl">All</button>
-            <button id="interview-filter-btn"
-                class="shadow bg-white text-gray-500 py-2 px-5 rounded-xl">Interview</button>
-            <button id="rejected-filter-btn"
-                class="shadow bg-white text-gray-500 py-2 px-5  rounded-xl">Rejected</button>
+            <button id="add-all-btn" class="shadow bg-sky-500 text-white  py-2 px-5 rounded-xl ">All</button>
+            <button id="add-interview-btn"
+                class="shadow bg-white text-gray-500 py-2 px-5 rounded-xl ">Interview</button>
+            <button id="add-rejected-btn"
+                class="shadow bg-white text-gray-500 py-2 px-5  rounded-xl ">Rejected</button>
         </section>
 
 
@@ -65,9 +67,9 @@
                     <p class="company-name text-sky-900 text-3xl font-bold">Mobile First Crop</p>
                     <p class="position-name text-gray-500 text-xl">React Native Developer</p>
                     <ul class="list-inside list-disc lg:flex gap-3 text-gray-500">
-                        <p>Remote</p>
-                        <li>Full time</li>
-                        <li>$130,000 - $175,000</li>
+                        <p class="location">Remote</p>
+                        <li class="type">Full time</li>
+                        <li class="salary">$130,000 - $175,000</li>
                     </ul>
 
 
@@ -87,19 +89,20 @@
                 </div>
 
                 <div class="right">
-                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full"><i
+                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full hover:bg-gray-200"><i
                             class="fa-solid fa-trash-can"></i></p>
                 </div>
             </div>
+
             <!-- card 2 -->
             <div class="card flex justify-between shadow-md bg-white p-8 rounded-xl">
                 <div class="left space-y-3">
                     <p class="company-name text-sky-900 text-3xl font-bold">WebFlow Agency</p>
                     <p class="position-name text-gray-500 text-xl">Web Designer & Developer</p>
                     <ul class="list-inside list-disc lg:flex gap-3 text-gray-500">
-                        <li>Los Angeles, CA</li>
-                        <li>Part Time</li>
-                        <li>$60,000 - $80,000</li>
+                        <li class="location">Los Angeles, CA</li>
+                        <li class="type">Part Time</li>
+                        <li class="salary">$60,000 - $80,000</li>
                     </ul>
 
 
@@ -118,7 +121,7 @@
                 </div>
 
                 <div class="right">
-                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full"><i
+                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full hover:bg-gray-200"><i
                             class="fa-solid fa-trash-can"></i></p>
                 </div>
             </div>
@@ -128,9 +131,9 @@
                     <p class="company-name text-sky-900 text-3xl font-bold">DataViz Solutions</p>
                     <p class="position-name text-gray-500 text-xl">Data Visualization Specialist</p>
                     <ul class="list-inside list-disc lg:flex gap-3 text-gray-500">
-                        <li>Denver, CO</li>
-                        <li>Full time</li>
-                        <li>$95,000 - $105,000</li>
+                        <li class="location">Denver, CO</li>
+                        <li class="type">Full time</li>
+                        <li class="salary">$95,000 - $105,000</li>
                     </ul>
 
 
@@ -149,19 +152,20 @@
                 </div>
 
                 <div class="right">
-                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full"><i
+                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full hover:bg-gray-200"><i
                             class="fa-solid fa-trash-can"></i></p>
                 </div>
             </div>
+
             <!-- card 4 -->
             <div class="card flex justify-between shadow-md bg-white p-8 rounded-xl">
                 <div class="left space-y-3">
                     <p class="company-name text-sky-900 text-3xl font-bold">CloudFirst Inc</p>
                     <p class="position-name text-gray-500 text-xl">Backend Developer</p>
                     <ul class="list-inside list-disc lg:flex gap-3 text-gray-500">
-                        <li>Austin, TX</li>
-                        <li>Full time</li>
-                        <li>$110,000 - $150,000</li>
+                        <li class="location">Austin, TX</li>
+                        <li class="type">Full time</li>
+                        <li class="salary">$110,000 - $150,000</li>
                     </ul>
 
 
@@ -169,7 +173,7 @@
                         APPLIED</span>
 
                     <p class="notes text-gray-500 mt-3">Design and maintain scalable backend services using Python and
-                        AWS. Work with modern DevOps practices.
+                        AWS. Work with modern DevOps practices.</p>
 
                     <div class="flex gap-5">
                         <button
@@ -180,19 +184,20 @@
                 </div>
 
                 <div class="right">
-                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full"><i
+                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full hover:bg-gray-200"><i
                             class="fa-solid fa-trash-can"></i></p>
                 </div>
             </div>
+
             <!-- card 5 -->
             <div class="card flex justify-between shadow-md bg-white p-8 rounded-xl">
                 <div class="left space-y-3">
                     <p class="company-name text-sky-900 text-3xl font-bold">Innovation Labs</p>
                     <p class="position-name text-gray-500 text-xl">UI/UX Engineer</p>
                     <ul class="list-inside list-disc lg:flex gap-3 text-gray-500">
-                        <li>Seattle, WA</li>
-                        <li>Hybrid</li>
-                        <li>$90,000 - $120,000</li>
+                        <li class="location">Seattle, WA</li>
+                        <li class="type">Hybrid</li>
+                        <li class="salary">$90,000 - $120,000</li>
                     </ul>
 
 
@@ -211,19 +216,20 @@
                 </div>
 
                 <div class="right">
-                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full"><i
+                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full hover:bg-gray-200"><i
                             class="fa-solid fa-trash-can"></i></p>
                 </div>
             </div>
+
             <!-- card 6 -->
             <div class="card flex justify-between shadow-md bg-white p-8 rounded-xl">
                 <div class="left space-y-3">
                     <p class="company-name text-sky-900 text-3xl font-bold">MegaCorp Solutions</p>
                     <p class="position-name text-gray-500 text-xl">JavaScript Developer</p>
                     <ul class="list-inside list-disc lg:flex gap-3 text-gray-500">
-                        <li>New York, NY</li>
-                        <li>Full time</li>
-                        <li>$100,000 - $135,000</li>
+                        <li class="location">New York, NY</li>
+                        <li class="type">Full time</li>
+                        <li class="salary">$100,000 - $135,000</li>
                     </ul>
 
 
@@ -242,19 +248,20 @@
                 </div>
 
                 <div class="right">
-                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full"><i
+                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full hover:bg-gray-200"><i
                             class="fa-solid fa-trash-can"></i></p>
                 </div>
             </div>
+
             <!-- card 7 -->
             <div class="card flex justify-between shadow-md bg-white p-8 rounded-xl">
                 <div class="left space-y-3">
                     <p class="company-name text-sky-900 text-3xl font-bold">StartUpXYZ</p>
                     <p class="position-name text-gray-500 text-xl">Full Stack Engineer</p>
                     <ul class="list-inside list-disc lg:flex gap-3 text-gray-500">
-                        <li>Remote</li>
-                        <li>Full time</li>
-                        <li>$85,000 - $120,000</li>
+                        <li class="location">Remote</li>
+                        <li class="type">Full time</li>
+                        <li class="salary">$85,000 - $120,000</li>
                     </ul>
 
 
@@ -273,19 +280,20 @@
                 </div>
 
                 <div class="right">
-                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full"><i
+                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full hover:bg-gray-200"><i
                             class="fa-solid fa-trash-can"></i></p>
                 </div>
             </div>
+
             <!-- card 8 -->
-            <div class="card flex justify-between shadow-md bg-white p-8 rounded-xl">
+            <div class="card flex justify-between shadow-md bg-white p-8 rounded-xl ">
                 <div class="left space-y-3">
                     <p class="company-name text-sky-900 text-3xl font-bold">TechCorp Industries</p>
                     <p class="position-name text-gray-500 text-xl">Senior Frontend Developer</p>
                     <ul class="list-inside list-disc lg:flex gap-3 text-gray-500">
-                        <li>San Francisco, CA</li>
-                        <li>Full time</li>
-                        <li>$115,000 - $175,000</li>
+                        <li class="location">San Francisco, CA</li>
+                        <li class="type">Full time</li>
+                        <li class="salary">$115,000 - $175,000</li>
                     </ul>
 
 
@@ -304,12 +312,16 @@
                 </div>
 
                 <div class="right">
-                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full"><i
+                    <p class="btn-delete border-2 border-gray-300 text-gray-400 p-3  rounded-full hover:bg-gray-200"><i
                             class="fa-solid fa-trash-can"></i></p>
                 </div>
             </div>
 
 
+        </section>
+
+        <!-- filtered section -->
+        <section id="filtered-section" class="mt-6 space-y-6 hidden">
         </section>
     </main>
 
